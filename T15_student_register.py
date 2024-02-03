@@ -27,3 +27,5 @@ with open('reg_form.txt', 'w') as file:
 print("-" *40)
 print("Register exported as reg_form.txt")
 print("-" *40)
+
+# with open('reg_form.txt', 'x') as file:  # For creating a new file each time.  good for this use
