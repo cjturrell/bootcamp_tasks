@@ -3,7 +3,6 @@ A program to determine a users total holiday cost.
 Includes plane cost, hotel cost and car rental cost.
 """
 # Functions ==================================================================
-# add docstring for functions!!! 
 def plane_cost(city_flight):
     """
     The function calculates the cost of a plane ticket based on the 
