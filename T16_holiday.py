@@ -3,6 +3,7 @@ A program to determine a users total holiday cost.
 Includes plane cost, hotel cost and car rental cost.
 """
 # Functions ==================================================================
+
 def plane_cost(city_flight):
     """
     The function calculates the cost of a plane ticket based on the 
@@ -21,6 +22,7 @@ def plane_cost(city_flight):
         print("Destination not recognized")
     return flight_total
 
+
 def hotel_cost(num_nights, hotel_cost=50):
     """
     The function calculates the total cost of a hotel stay based on the number 
@@ -30,6 +32,7 @@ def hotel_cost(num_nights, hotel_cost=50):
     hotel_total = num_nights * hotel_cost
     return hotel_total
 
+
 def car_rental(rental_days, car_rental_cost=25):
     """
     The function calculates the total cost of renting a car based on the 
@@ -38,6 +41,7 @@ def car_rental(rental_days, car_rental_cost=25):
     """
     car_total = rental_days * car_rental_cost
     return car_total
+
 
 def holiday_cost(plane_cost, hotel_cost, car_rental):
     """
@@ -50,6 +54,7 @@ def holiday_cost(plane_cost, hotel_cost, car_rental):
                     hotel_cost(num_nights, hotel_cost=50) + 
                     car_rental(rental_days, car_rental_cost=25))
     return holiday_total
+
 
 # Welcome message ============================================================
 print("-"*50)
@@ -88,10 +93,10 @@ while True:
 
 # Display all information in a readable format
 print("-"*50)
-print(f"Plane to {city_flight}: \t£{"%.2f"%plane_cost(city_flight)}"
-      f"\nHotel for {num_nights} nights: \t£{"%.2f"%hotel_cost(num_nights)}"
+print(f"Plane to {city_flight}: \t£{"%.2f" % plane_cost(city_flight)}"
+      f"\nHotel for {num_nights} nights: \t£{ "%.2f" % hotel_cost(num_nights)}"
       f"\nCar rental for {rental_days} days: "
-        f"\t£{"%.2f"%car_rental(rental_days)}"
+        f"\t£{"%.2f" % car_rental(rental_days)}"
       f"\n\nHoliday Total: "
-        f"£{"%.2f"%holiday_cost(plane_cost, hotel_cost, car_rental)}")
+        f"£{" %.2f" % holiday_cost(plane_cost, hotel_cost, car_rental)}")
 print("-"*50)
